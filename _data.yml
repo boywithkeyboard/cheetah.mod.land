@@ -1,8 +1,6 @@
 metas:
   title: =title
   description: =description
-  twitter: "@misteroom"
-  image: /avatar.jpg
-  color: "#141b1f"
-  icon: /apple-touch-icon.png
+  image: /icon.png
+  icon: /icon.png
   generator: true
