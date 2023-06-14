@@ -7,7 +7,7 @@ header:
 install:
   title: "Run the following to [setup cheetah](./docs/overview/installation.md):"
   code: deno run -A https://deno.land/x/cheetah/setup.ts
-  url: /docs/getting-started/your-first-page/
+  url: /docs/setup/getting-started/
 
 usage:
   - title: Schema Validation

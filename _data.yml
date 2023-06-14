@@ -1,6 +1,6 @@
 metas:
   title: =title
   description: =description
-  image: /icon.png
-  icon: /icon.png
+  image: /logo.png
+  icon: /logo.png
   generator: true
