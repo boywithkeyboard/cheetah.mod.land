@@ -1,0 +1,7 @@
+layout: layouts/docs.njk
+main_menu: docs
+docs_menu:
+  - title: Configuration
+    id: configuration
+  - title: API
+    id: api

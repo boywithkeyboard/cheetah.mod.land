@@ -1,0 +1,191 @@
+:root {
+  /* Fonts */
+  --font-display: 'Epilogue', 'Epilogue-fallback', var(--font-ui);
+  --font-ui: 'Inter', 'Inter', 'Inter-fallback', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif;
+  --font-code: 'JetBrains Mono', 'JetBrains-fallback', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+
+  /* Text styles */
+  --text-display-size: clamp(30px, 10vw, 75px);
+  --text-display-height: 0.95;
+  --text-display: 700 var(--text-display-size)/var(--text-display-height) var(--font-display);
+  --text-display-spacing: -0.045em;
+  --text-heading-size: clamp(20px, 8vw, 50px);
+  --text-heading: 700 var(--text-heading-size)/1.1 var(--font-display);
+  --text-heading-spacing: -0.03em;
+  --text-title-size: clamp(20px, 6vw, 30px);
+  --text-title: 600 var(--text-title-size)/1.2 var(--font-display);
+  --text-title-spacing: -0.03em;
+  --text-body-size: clamp(16px, 4vw, 20px);
+  --text-body: var(--text-body-size)/1.65 var(--font-ui);
+  --text-body-bold: 600 var(--text-body-size)/1.6 var(--font-ui);
+  --text-body-spacing: -0.02em;
+  --text-caption: 15px/1.6 var(--font-ui);
+  --text-caption-bold: 600 15px/1.6 var(--font-ui);
+  --text-caption-mini: 13px/1.6 var(--font-ui);
+  --text-caption-mini-bold: 600 13px/1.6 var(--font-ui);
+  --text-code: 16px/1.6 var(--font-code);
+
+  /* Colors */
+  /* Tokens */
+  --color-red-400: hsl(0deg, 50%, 40%);
+  --color-red-500: hsl(0deg, 50%, 50%);
+  --color-red-600: hsl(0deg, 70%, 60%);
+  --color-white: hsl(200deg, 20%, 100%);
+  --color-white-alpha: hsla(200deg, 20%, 100%, 0.9);
+  --color-black-970: hsl(200deg, 20%, 97%);
+  --color-black-930: hsl(200deg, 20%, 93%);
+  --color-black-860: hsl(200deg, 20%, 86%);
+  --color-black-650: hsl(200deg, 20%, 65%);
+  --color-black-350: hsl(200deg, 20%, 35%);
+  --color-black-240: hsl(200deg, 20%, 24%);
+  --color-black-180: hsl(200deg, 20%, 18%);
+  --color-black-140: hsl(200deg, 20%, 14%);
+  --color-black-100: hsl(200deg, 20%, 10%);
+  --color-black-100-alpha: hsla(200deg, 20%, 10%, 0.9);
+  --color-yellow-800: hsl(50deg, 80%, 80%);
+  --color-yellow-750: hsl(50deg, 80%, 75%);
+  --color-yellow-200: hsl(50deg, 80%, 20%);
+  --color-brown-600: hsl(50deg, 10%, 60%);
+  --color-brown-160: hsl(50deg, 10%, 16%);
+  --color-brown-200: hsl(50deg, 10%, 20%);
+
+  /* Borders */
+  --border-radius-small: 5px;
+  --border-radius: 10px;
+
+  /* Animation */
+  --animation-duration: 0.2s;
+
+  /* Spaces */
+  --margin: max(25px, 5vw);
+  --max-width: 1200px;
+  --column-gap-0: 10px;
+  --column-gap-1: 25px;
+  --column-gap-2: 50px;
+  --column-gap-3: 100px;
+  --row-gap-0: 25px;
+  --row-gap-1: clamp(20px, 5vh, 50px);
+  --row-gap-2: clamp(40px, 10vh, 100px);
+  --row-gap-3: clamp(60px, 15vh, 150px);
+  --row-gap-4: clamp(80px, 20vh, 200px);
+}
+
+::selection {
+  background-color: var(--gray5);
+  color: var(--gray12);
+  filter: brightness(2);
+}
+
+:root.no-motion {
+  --animation-duration: 0s;
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --animation-duration: 0s;
+  }
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --gray1: hsl(0, 0%, 99.0%);
+  --gray2: hsl(0, 0%, 97.3%);
+  --gray3: hsl(0, 0%, 95.1%);
+  --gray4: hsl(0, 0%, 93.0%);
+  --gray5: hsl(0, 0%, 90.9%);
+  --gray6: hsl(0, 0%, 88.7%);
+  --gray7: hsl(0, 0%, 85.8%);
+  --gray8: hsl(0, 0%, 78.0%);
+  --gray9: hsl(0, 0%, 56.1%);
+  --gray10: hsl(0, 0%, 52.3%);
+  --gray11: hsl(0, 0%, 43.5%);
+  --gray12: hsl(0, 0%, 9.0%);
+
+  --red1: hsl(359, 100%, 99.4%);
+  --red2: hsl(359, 100%, 98.6%);
+  --red3: hsl(360, 100%, 96.8%);
+  --red4: hsl(360, 97.9%, 94.8%);
+  --red5: hsl(360, 90.2%, 91.9%);
+  --red6: hsl(360, 81.7%, 87.8%);
+  --red7: hsl(359, 74.2%, 81.7%);
+  --red8: hsl(359, 69.5%, 74.3%);
+  --red9: hsl(358, 75.0%, 59.0%);
+  --red10: hsl(358, 69.4%, 55.2%);
+  --red11: hsl(358, 65.0%, 48.7%);
+  --red12: hsl(354, 50.0%, 14.6%);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --gray1: hsl(0, 0%, 8.5%);
+  --gray2: hsl(0, 0%, 11.0%);
+  --gray3: hsl(0, 0%, 13.6%);
+  --gray4: hsl(0, 0%, 15.8%);
+  --gray5: hsl(0, 0%, 17.9%);
+  --gray6: hsl(0, 0%, 20.5%);
+  --gray7: hsl(0, 0%, 24.3%);
+  --gray8: hsl(0, 0%, 31.2%);
+  --gray9: hsl(0, 0%, 43.9%);
+  --gray10: hsl(0, 0%, 49.4%);
+  --gray11: hsl(0, 0%, 62.8%);
+  --gray12: hsl(0, 0%, 93.0%);
+
+  --red1: hsl(353, 23.0%, 9.8%);
+  --red2: hsl(357, 34.4%, 12.0%);
+  --red3: hsl(356, 43.4%, 16.4%);
+  --red4: hsl(356, 47.6%, 19.2%);
+  --red5: hsl(356, 51.1%, 21.9%);
+  --red6: hsl(356, 55.2%, 25.9%);
+  --red7: hsl(357, 60.2%, 31.8%);
+  --red8: hsl(358, 65.0%, 40.4%);
+  --red9: hsl(358, 75.0%, 59.0%);
+  --red10: hsl(358, 85.3%, 64.0%);
+  --red11: hsl(358, 100%, 69.5%);
+  --red12: hsl(351, 89.0%, 96.0%);
+}
+
+:root {
+  --color-primary: var(--red11);
+  --color-primary-1: var(--red12);
+  --color-foreground: var(--gray12);
+  --color-foreground-1: var(--gray11);
+  --color-background: var(--gray1);
+  --color-background-a: var(--gray3);
+  --color-background-1: var(--gray2);
+  --color-background-2: var(--gray4);
+  --color-background-3: var(--gray5);
+}
+
+/* 
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-primary: var(--color-red-500);
+  --color-primary-1: var(--color-red-400);
+  --color-foreground: var(--color-black-100);
+  --color-foreground-1: var(--color-black-240);
+  --color-background: var(--color-white);
+  --color-background-a: var(--color-white-alpha);
+  --color-background-1: var(--color-black-970);
+  --color-background-2: var(--color-black-930);
+  --color-background-3: var(--color-black-860);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-primary: var(--color-red-600);
+  --color-primary-1: var(--color-red-400);
+  --color-foreground: var(--color-white);
+  --color-foreground-1: var(--color-black-650);
+  --color-background: var(--color-black-100);
+  --color-background-a: var(--color-black-100-alpha);
+  --color-background-1: var(--color-black-140);
+  --color-background-2: var(--color-black-180);
+  --color-background-3: var(--color-black-240);
+
+  --docsearch-modal-background: var(--color-background);
+  --docsearch-key-gradient: background-image: linear-gradient(-26.5deg, var(--color-background), var(--color-background-1));
+  --docsearch-footer-background: var(--color-background-1);
+  --docsearch-muted-color: hsl(218deg, 14%, 64%);
+} */

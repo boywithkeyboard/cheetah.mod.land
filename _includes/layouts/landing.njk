@@ -1,0 +1,36 @@
+---
+layout: ./base.njk
+page_css: landing.css
+---
+<div class="landing">
+  <header class="landing-header">
+    <h1>{{ header.title | safe }}</h1>
+
+    <figure class="landing-header-fire">
+    </figure>
+
+    <div class="landing-install">
+      {{ install.title | md | safe }}
+
+      <div class="landing-install-code">
+        <pre><code>{{ install.code }}</code></pre>
+        <a class="landing-install-cta" href="{{ install.url }}" aria-label="Continue to Getting Started">
+          <img src="/icons/arrow-right.svg" inline>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="landing-usage">
+  {% for block in usage %}
+    <div class="landing-usage-text">
+      <h2>{{ block.title }}</h2>
+      {{ block.description | md | safe }}
+    </div>
+    <div class="landing-usage-code">
+      {{ block.code | md | safe }}
+    </div>
+  {% endfor %}
+  </section>
+</div>
