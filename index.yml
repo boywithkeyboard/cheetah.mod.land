@@ -1,6 +1,6 @@
 layout: layouts/landing.njk
 title: cheetah, the ultimative web framework
-description: Support for multiple file formats like Markdown, YAML, JavaScript, TypeScript, JSX, Nunjucks etc.
+description: The blazingly fast web framework for Cloudflare Workers and Deno.
 header:
   title: The <span>blazingly fast</span> framework for the web.
 
