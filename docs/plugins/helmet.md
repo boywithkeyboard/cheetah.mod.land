@@ -5,8 +5,8 @@ order: 2
 ---
 
 ```ts
-import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import helmet from 'https://deno.land/x/cheetah/plugins/helmet.ts'
+import cheetah from 'cheetah/mod.ts'
+import helmet from 'cheetah/plugins/helmet.ts'
 
 const app = new cheetah()
   .use(helmet())

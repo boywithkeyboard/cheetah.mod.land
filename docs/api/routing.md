@@ -6,7 +6,7 @@ order: 4
 ## 🔗 Chaining
 
 ```ts
-import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+import cheetah from 'cheetah/mod.ts'
 
 const app = new cheetah()
   .get('/cake', () => '🎂') // GET '/cake'
@@ -17,7 +17,7 @@ const app = new cheetah()
 ## 🪹 Nesting
 
 ```ts
-import cheetah, { Collection } from 'https://deno.land/x/cheetah/mod.ts'
+import cheetah, { Collection } from 'cheetah/mod.ts'
 
 const fastFood = new Collection()
   .get('/burger', () => '🍔') // GET '/fast-food/burger'

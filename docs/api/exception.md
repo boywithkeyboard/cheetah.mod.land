@@ -25,7 +25,7 @@ new Exception(404) // -> message: Not Found, code: 404
 ## Example
 
 ```ts
-import { Exception } from 'https://deno.land/x/cheetah/Exception.ts'
+import { Exception } from 'cheetah/Exception.ts'
 
 app.get('/example', (c) => {
   if (condition)
