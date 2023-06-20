@@ -1,6 +1,6 @@
 ---
 title: Plugins
-order: 3
+order: 6
 ---
 
 This feature is still in an early stage. It is stable, but will undergo breaking syntactical changes before v1.0. {.tip}
