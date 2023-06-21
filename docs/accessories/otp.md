@@ -1,11 +1,15 @@
 ---
 title: OTP
-order: 3
+order: 4
 ---
 
 It's pretty easy to add two-factor authentication to your cheetah app with e.g. Google Authenticator.
 
-## Create a Secret
+```ts
+import { otp } from 'cheetah/x/mod.ts'
+```
+
+## Create a secret
 
 Generate a random secret (with a length of 64 by default).
 
@@ -13,7 +17,7 @@ Generate a random secret (with a length of 64 by default).
 const randomSecret = otp.secret(128) // with a length of 128
 ```
 
-## Retrieve a Token
+## Retrieve a token
 
 Get the 6-digit token for a given timestamp (omit the timestamp to use the current time).
 
@@ -30,7 +34,7 @@ Create a URI that you can use, for example, for a QR code to scan with Google Au
 const uri = otp.uri('user@email.com', 'My Company', secret)
 ```
 
-## Validate a Token
+## Validate a token
 
 Determine if a given token is valid.
 

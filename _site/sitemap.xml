@@ -5,6 +5,22 @@
     <lastmod>2023-06-08T13:00:33.241Z</lastmod>
   </url>
   <url>
+    <loc>https://cheetah.mod.land/docs/accessories/jwt/</loc>
+    <lastmod>2023-06-21T20:44:03.886Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cheetah.mod.land/docs/accessories/oauth2/</loc>
+    <lastmod>2023-06-14T21:21:02.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cheetah.mod.land/docs/accessories/otp/</loc>
+    <lastmod>2023-06-14T21:21:59.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cheetah.mod.land/docs/accessories/send-email/</loc>
+    <lastmod>2023-06-14T21:22:35.285Z</lastmod>
+  </url>
+  <url>
     <loc>https://cheetah.mod.land/docs/api/environment-variables/</loc>
     <lastmod>2023-06-14T11:52:59.088Z</lastmod>
   </url>
@@ -55,18 +71,6 @@
   <url>
     <loc>https://cheetah.mod.land/docs/configuration/preflight-mode/</loc>
     <lastmod>2023-06-14T11:42:36.794Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cheetah.mod.land/docs/examples/oauth2/</loc>
-    <lastmod>2023-06-14T21:21:02.899Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cheetah.mod.land/docs/examples/otp/</loc>
-    <lastmod>2023-06-14T21:21:59.360Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cheetah.mod.land/docs/examples/send-email/</loc>
-    <lastmod>2023-06-14T21:22:35.285Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/plugins/helmet/</loc>
