@@ -3,7 +3,7 @@ title: Routing
 order: 4
 ---
 
-## 🔗 Chaining
+## Chaining
 
 ```ts
 import cheetah from 'cheetah/mod.ts'
@@ -14,7 +14,7 @@ const app = new cheetah()
   .put('/donut', () => '🍩') // PUT '/donut'
 ```
 
-## 🪹 Nesting
+## Nesting
 
 ```ts
 import cheetah, { Collection } from 'cheetah/mod.ts'
