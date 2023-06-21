@@ -3,8 +3,6 @@ title: Request
 order: 1
 ---
 
-If you are unsure about where and how to use these variables, make sure to read the {.tip}
-
 ## IP Address
 
 ```ts

@@ -3,7 +3,7 @@ title: Plugins
 order: 6
 ---
 
-This feature is still in an early stage. It is stable, but will undergo breaking syntactical changes before v1.0. {.tip}
+This feature is still in an early stage. It is safe to use for production, but will undergo breaking syntactical changes on v1.0. {.tip}
 
 ## Official Plugins
 
