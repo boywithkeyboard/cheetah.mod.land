@@ -1,12 +1,12 @@
 ---
 title: helmet
-description: This plugin is based on [express.js' helmet](https://github.com/helmetjs/helmet).
-order: 2
+description: This extension is based on [express.js' helmet](https://github.com/helmetjs/helmet).
+order: 1
 ---
 
 ```ts
 import cheetah from 'cheetah/mod.ts'
-import helmet from 'cheetah/plugins/helmet.ts'
+import { helmet } from 'cheetah/ext/helmet.ts'
 
 const app = new cheetah()
   .use(helmet())

@@ -7,7 +7,7 @@ docs_menu:
     id: configuration
   - title: API
     id: api
-  - title: Plugins
-    id: plugins
+  - title: Extensions
+    id: extensions
   - title: Accessories
     id: accessories
