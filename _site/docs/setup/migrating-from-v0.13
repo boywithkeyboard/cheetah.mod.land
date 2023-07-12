@@ -118,6 +118,15 @@
   
   <details class="doc-navbar-section" >
     <summary>
+      <span class="doc-navbar-section-title">Migrating to v1.0</span>
+    </summary>
+    <ul class="doc-navbar-section-links">
+      
+    </ul>
+  </details>
+  
+  <details class="doc-navbar-section" >
+    <summary>
       <span class="doc-navbar-section-title">Configuration</span>
     </summary>
     <ul class="doc-navbar-section-links">
