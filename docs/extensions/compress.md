@@ -5,8 +5,8 @@ order: 2
 ---
 
 ```ts
-import cheetah from 'cheetah/mod.ts'
-import { compress } from 'cheetah/ext/compress.ts'
+import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+import { compress } from 'https://deno.land/x/cheetah/ext/compress.ts'
 
 const app = new cheetah()
   .use(compress())

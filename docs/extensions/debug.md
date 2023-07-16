@@ -5,8 +5,8 @@ order: 3
 ---
 
 ```ts
-import cheetah from 'cheetah/mod.ts'
-import { debug } from 'cheetah/ext/debug.ts'
+import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+import { debug } from 'https://deno.land/x/cheetah/ext/debug.ts'
 
 const app = new cheetah()
   .use(debug())

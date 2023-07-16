@@ -1,7 +1,7 @@
 ---
 title: CORS
 description: Configure CORS for your application.
-order: 4
+order: 3
 ---
 
 cheetah has built-in support for [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). You can configure it according to the [specification](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin) of the `Access-Control-Allow-Origin` header.
@@ -9,7 +9,9 @@ cheetah has built-in support for [CORS](https://developer.mozilla.org/en-US/docs
 ## Global
 
 ```ts
-new cheetah({
+import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+
+const app = new cheetah({
   cors: '*'
 })
 ```
@@ -17,16 +19,22 @@ new cheetah({
 ## Per Collection
 
 ```ts
-new Collection({
-  cors: 'foo.com'
+import cheetah, { Collection } from 'https://deno.land/x/cheetah/mod.ts'
+
+const collection = new Collection({
+  cors: 'example.com'
 })
 ```
 
 ## Per Route
 
 ```ts
-.get('/foo', {
-  cors: 'bar.com'
+import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+
+const app = new cheetah()
+
+app.get('/foo', {
+  cors: 'example.com'
 }, () => {
   // handle request
 })

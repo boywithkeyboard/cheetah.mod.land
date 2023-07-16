@@ -3,8 +3,8 @@ main_menu: docs
 docs_menu:
   - title: Setup
     id: setup
-  - title: Migrating to v1.0
-    id: migrating-to-v1
+  - title: What's New
+    id: changelog
   - title: Configuration
     id: configuration
   - title: API

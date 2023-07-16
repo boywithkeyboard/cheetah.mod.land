@@ -1,6 +1,6 @@
 metas:
   title: =title
   description: =description
-  image: /logo.png
-  icon: /logo.png
+  image: /cheetah.svg
+  icon: /cheetah.svg
   generator: true

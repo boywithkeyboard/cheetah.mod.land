@@ -1,10 +1,10 @@
 ---
-title: JWT
-order: 1
+title: jwt
+order: 5
 ---
 
 ```ts
-import { jwt } from 'cheetah/x/mod.ts'
+import { jwt } from 'https://deno.land/x/cheetah/x/mod.ts'
 ```
 
 ## Generate a secret
@@ -14,7 +14,7 @@ You can parse either a [CryptoKey](https://developer.mozilla.org/en-US/docs/Web/
 This key can then be parsed to the functions.
 
 ```ts
-import { createKey } from 'cheetah/x/mod.ts'
+import { createKey } from 'https://deno.land/x/cheetah/x/mod.ts'
 
 const key = await createKey()
 ```
