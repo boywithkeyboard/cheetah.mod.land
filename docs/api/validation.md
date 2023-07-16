@@ -10,7 +10,7 @@ the request body has the MIME type `multipart/form-data`)_.
 
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import z from 'https://deno.land/x/zod@v3.21.4/mod.ts'
+import z from 'https://deno.land/x/zod/mod.ts'
 
 const app = new cheetah()
 
