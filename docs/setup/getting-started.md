@@ -13,6 +13,8 @@ deno run -Ar https://deno.land/x/cheetah/setup.ts
 
 If you don't want to use one of the templates, you can follow the manual for [Deno](/docs/setup/deno/) or for [Cloudflare Workers](/docs/setup/cloudflare-workers/).
 
+If you're using Cloudflare as a proxy, please specify it through the [`proxy`](/docs/configuration/proxy/) option. {.tip}
+
 Also, if you haven't already enabled Deno for your workspace, make sure to check out [Deno's manual](https://deno.land/manual/getting_started/setup_your_environment) to learn more.
 
 ## Disclaimer
