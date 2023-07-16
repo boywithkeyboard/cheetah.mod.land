@@ -6,15 +6,15 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/cache/</loc>
-    <lastmod>2023-07-15T21:47:59.286Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.016Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/env/</loc>
-    <lastmod>2023-07-15T21:48:19.652Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.016Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/jsx/</loc>
-    <lastmod>2023-07-15T21:48:06.406Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.017Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/jwt/</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/location-data/</loc>
-    <lastmod>2023-07-15T21:47:16.681Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.018Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/accessories/otp/</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/create-extension/</loc>
-    <lastmod>2023-06-14T22:03:01.924Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.020Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/exception/</loc>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/multiple-handlers/</loc>
-    <lastmod>2023-07-16T01:02:52.916Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.021Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/request/</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/use-extension/</loc>
-    <lastmod>2023-07-16T00:38:49.199Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.023Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/api/validation/</loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/changelog/july-16/</loc>
-    <lastmod>2023-07-15T22:25:40.508Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.026Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/configuration/base/</loc>
@@ -86,19 +86,19 @@
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/configuration/proxy/</loc>
-    <lastmod>2023-07-16T00:06:24.703Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.028Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/extensions/compress/</loc>
-    <lastmod>2023-07-12T13:56:25.472Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.030Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/extensions/debug/</loc>
-    <lastmod>2023-07-12T13:56:27.040Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.030Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/extensions/helmet/</loc>
-    <lastmod>2023-06-14T21:59:08.801Z</lastmod>
+    <lastmod>2023-07-16T02:31:08.031Z</lastmod>
   </url>
   <url>
     <loc>https://cheetah.mod.land/docs/setup/cloudflare-workers/</loc>
