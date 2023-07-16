@@ -11,7 +11,7 @@ This module is specifically designed for Cloudflare Workers as Deno Deploy doesn
 
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import { Cache } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { Cache } from 'https://deno.land/x/cheetah/x/cache.ts'
 
 const app = new cheetah()
 

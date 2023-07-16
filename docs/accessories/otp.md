@@ -6,7 +6,7 @@ order: 7
 It's pretty easy to add two-factor authentication to your cheetah app with e.g. Google Authenticator.
 
 ```ts
-import { otp } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { otp } from 'https://deno.land/x/cheetah/x/otp.ts'
 ```
 
 ## Create a secret

@@ -5,9 +5,9 @@
   <span class=hljs-punctuation>}</span>
 <span class=hljs-punctuation>}</span>
 </code></pre><p>You probably also need to import the JSX factory for it to work.<pre><code class="language-ts hljs language-typescript"><span class=hljs-comment>/** <span class=hljs-doctag>@jsx</span> h */</span>
-<span class=hljs-keyword>import</span> { h } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://esm.sh/preact@10.16.0'</span>
+<span class=hljs-keyword>import</span> { h } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/x/jsx.tsx'</span>
 </code></pre><h2 id=basic-example tabindex=-1><a class=header-anchor href=#basic-example>Basic example</a></h2><pre><code class="language-tsx hljs language-typescript"><span class=hljs-keyword>import</span> cheetah <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/mod.ts'</span>
-<span class=hljs-keyword>import</span> { jsx } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/x/mod.ts'</span>
+<span class=hljs-keyword>import</span> { jsx } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/x/jsx.tsx'</span>
 
 <span class=hljs-keyword>const</span> app = <span class=hljs-keyword>new</span> <span class="hljs-title function_">cheetah</span>()
 
@@ -17,7 +17,7 @@
 
 app.<span class="hljs-title function_">get</span>(<span class=hljs-string>'/'</span>, <span class=hljs-function>(<span class=hljs-params>c</span>) =></span> <span class="hljs-title function_">jsx</span>(c, <span class="hljs-title class_">Custom</span>))
 </code></pre><h2 id=pass-data-to-the-component tabindex=-1><a class=header-anchor href=#pass-data-to-the-component>Pass data to the component</a></h2><pre><code class="language-tsx hljs language-typescript"><span class=hljs-keyword>import</span> cheetah <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/mod.ts'</span>
-<span class=hljs-keyword>import</span> { jsx } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/x/mod.ts'</span>
+<span class=hljs-keyword>import</span> { jsx } <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/x/jsx.tsx'</span>
 
 <span class=hljs-keyword>const</span> app = <span class=hljs-keyword>new</span> <span class="hljs-title function_">cheetah</span>()
 

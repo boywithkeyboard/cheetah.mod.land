@@ -20,14 +20,14 @@ You probably also need to import the JSX factory for it to work.
 
 ```ts
 /** @jsx h */
-import { h } from 'https://esm.sh/preact@10.16.0'
+import { h } from 'https://deno.land/x/cheetah/x/jsx.tsx'
 ```
 
 ##  Basic example
 
 ```tsx
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import { jsx } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { jsx } from 'https://deno.land/x/cheetah/x/jsx.tsx'
 
 const app = new cheetah()
 
@@ -42,7 +42,7 @@ app.get('/', (c) => jsx(c, Custom))
 
 ```tsx
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import { jsx } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { jsx } from 'https://deno.land/x/cheetah/x/jsx.tsx'
 
 const app = new cheetah()
 

@@ -9,7 +9,7 @@ This module is specifically designed for Cloudflare Workers. {.tip}
 
 ```ts
 import app from 'https://deno.land/x/cheetah/mod.ts'
-import { env } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { env } from 'https://deno.land/x/cheetah/x/env.ts'
 
 const app = new cheetah()
 

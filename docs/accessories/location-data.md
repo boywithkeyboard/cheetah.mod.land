@@ -9,7 +9,7 @@ You must either deploy your app to [Cloudflare Workers](https://developers.cloud
 ## Setup
 
 ```ts
-import { LocationData } from 'https://deno.land/x/cheetah/x/mod.ts'
+import { LocationData } from 'https://deno.land/x/cheetah/x/location_data.ts'
 
 app.get('/', (c) => {
   const location = new LocationData(c)
