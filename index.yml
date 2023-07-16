@@ -5,7 +5,7 @@ header:
   title: The <span>blazingly fast</span> framework for the web.
 
 install:
-  title: "Run the following to [setup cheetah](./docs/overview/installation.md):"
+  title: "Run the following to [setup cheetah](/docs/setup/getting-started/):"
   code: deno run -Ar https://deno.land/x/cheetah/setup.ts
   url: /docs/setup/getting-started/
 
@@ -14,51 +14,30 @@ usage:
     description: |
       When building a large API with cheetah, you probably want some sort of validation to reduce the amount of boilerplate code to validate the body, query, cookies, and header of the incoming request.
     code: |
-      <lume-code>
+      ```ts
+      import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+      import z from 'https://deno.land/x/zod/mod.ts'
 
-      ```ts { title="Zod" }
-      import cheetah from 'cheetah/mod.ts'
-      import validator, { z } from 'cheetah/validator/zod.ts'
+      const app = new cheetah()
 
-      const app = new cheetah({
-        validator
-      })
-
-      app.post('/example', {
+      app.post('/', {
         body: z.object({
           email: z.string().email(),
           password: z.string()
         })
       }, () => 'Hello!')
       ```
-      ```ts { title="TypeBox" }
-      import cheetah from 'cheetah/mod.ts'
-      import validator, { Type } from 'cheetah/validator/typebox.ts'
-
-      const app = new cheetah({
-        validator
-      })
-
-      app.post('/example', {
-        body: Type.Object({
-          email: Type.RegEx(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/),
-          password: Type.String()
-        })
-      }, () => 'Hello!')
-      ```
-
-      </lume-code>
 
   - title: 🪖 Secure
     description: |
       cheetah ensures that parsing doesn't cause your app to freeze.
     code: |
       ```ts
-      import cheetah from 'cheetah/mod.ts'
+      import cheetah from 'https://deno.land/x/cheetah/mod.ts'
 
       const app = new cheetah()
 
-      app.post('/example', (c) => {
+      app.post('/', (c) => {
         const body = await c.req.buffer()
       })
       ```
@@ -70,7 +49,7 @@ usage:
       <lume-code>
 
       ```ts { title="🔗 Chaining" }
-      import cheetah from 'cheetah/mod.ts'
+      import cheetah from 'https://deno.land/x/cheetah/mod.ts'
 
       const app = new cheetah()
         .get('/cake', () => '🎂') // GET '/cake'
@@ -78,7 +57,7 @@ usage:
         .put('/donut', () => '🍩') // PUT '/donut'
       ```
       ```ts { title="🪹 Nesting" }
-      import cheetah, { Collection } from 'cheetah/mod.ts'
+      import cheetah, { Collection } from 'https://deno.land/x/cheetah/mod.ts'
 
       const fastFood = new Collection()
         .get('/burger', () => '🍔') // GET '/fast-food/burger'

@@ -3,11 +3,13 @@ main_menu: docs
 docs_menu:
   - title: Setup
     id: setup
+  - title: What's New
+    id: changelog
   - title: Configuration
     id: configuration
   - title: API
     id: api
-  - title: Plugins
-    id: plugins
+  - title: Extensions
+    id: extensions
   - title: Accessories
     id: accessories

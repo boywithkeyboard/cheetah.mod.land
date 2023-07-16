@@ -9,165 +9,126 @@ This enables the conversion of a FormData request body into a JSON object _(if
 the request body has the MIME type `multipart/form-data`)_.
 
 ```ts
-import cheetah from 'cheetah/mod.ts'
-import zod, { z } from 'cheetah/validator/zod.ts'
+import cheetah from 'https://deno.land/x/cheetah/mod.ts'
+import z from 'https://deno.land/x/zod/mod.ts'
 
-const app = new cheetah({
-  validator: zod,
-})
+const app = new cheetah()
 
-app.get('/example', {
+app.get('/', {
   body: z.object({
-    message: z.string()
+    foo: z.string()
   }),
   transform: true
 }, async (c) => {
-  console.log(body) // e.g. { message: 'Hello!' }
+  console.log(await c.req.body()) // e.g. { foo: 'bar' }
 })
 ```
 
-## TypeBox
+## Parse & Validate Body
 
-### Setup
+<lume-code>
 
-  ```ts
-  import cheetah from 'cheetah/mod.ts'
-  import validator, { Type } from 'cheetah/validator/typebox.ts'
-
-  const app = new cheetah({
-    validator
+```ts { title="JSON" }
+// ZodObject
+app.post('/', {
+  body: z.object({
+    key: z.string()
   })
-  ```
+}, (c) => {
+  console.log(await c.req.body())
+})
 
-### Parsing & Validating Body
+// ZodRecord
+app.post('/', {
+  body: z.record(z.string(), z.number())
+}, (c) => {
+  console.log(await c.req.body())
+})
 
-  JSON:
+// ZodUnion
+app.post('/', {
+  body: z.union([z.object({
+    foo: z.string()
+  }), z.object({
+    bar: z.string()
+  })])
+}, (c) => {
+  console.log(await c.req.body())
+})
 
-  ```ts
-  app.post('/example', {
-    body: Type.Object({
-      key: Type.String()
-    })
-  }, (c) => {
-    const validatedObject = c.req.body
+app.post('/', {
+  body: z.object({
+    foo: z.string()
+  }).or(z.object({
+    bar: z.string()
+  }))
+}, (c) => {
+  console.log(await c.req.body())
+})
+```
+
+```ts { title="Text" }
+// ZodObject
+app.post('/', {
+  body: z.string().min(4).max(16)
+}, (c) => {
+  console.log(await c.req.body())
+})
+
+// ZodUnion
+app.post('/', {
+  body: z.union([
+    z.string().min(4).max(16),
+    z.string().email()
+  ])
+}, (c) => {
+  console.log(await c.req.body())
+})
+
+app.post('/', {
+  body: z.string().min(4).max(16)
+    .or(z.string().email())
+}, (c) => {
+  console.log(await c.req.body())
+})
+```
+
+</lume-code>
+
+## Parse & Validate Query Parameters
+
+```ts
+app.get('/', {
+  query: z.object({
+    foo: z.boolean()
   })
-  ```
+}, (c) => {
+  console.log(c.req.query)
+})
+```
 
-  Text:
+## Parse & Validate Headers
 
-  ```ts
-  app.post('/example', {
-    body: Type.String({ minLength: 4, maxLength: 16 })
-  }, (c) => {
-    const validatedString = c.req.body
+If you don't specify a schema for the headers, they will nevertheless be parsed automatically and have the type `Record<string, string | undefined>`. {.tip}
+
+```ts
+app.get('/', {
+  headers: z.object({
+    foo: z.string()
   })
-  ```
+}, (c) => {
+  console.log(c.req.headers)
+})
+```
 
-### Parsing & Validating Query Parameters
+## Parse & Validate Cookies
 
-  ```ts
-  app.get('/example', {
-    query: Type.Object({
-      key: Type.String()
-    })
-  }, (c) => {
-    const validatedObject = c.req.query
+```ts
+app.get('/', {
+  cookies: z.object({
+    foo: z.string()
   })
-  ```
-
-### Parsing & Validating Headers
-
-  ```ts
-  app.get('/example', {
-    query: Type.Object({
-      key: Type.String()
-    }, { additionalParameters: true })
-  }, (c) => {
-    const validatedObject = c.req.query
-  })
-  ```
-
-### Parsing & Validating Cookies
-
-  ```ts
-  app.get('/example', {
-    cookies: Type.Object({
-      key: Type.String()
-    })
-  }, (c) => {
-    const validatedObject = c.req.cookies
-  })
-  ```
-
-## Zod
-
-### Setup
-
-  ```ts
-  import cheetah from 'cheetah/mod.ts'
-  import validator, { z } from 'cheetah/validator/zod.ts'
-
-  const app = new cheetah({
-    validator
-  })
-  ```
-
-### Parsing & Validating Body
-
-  JSON:
-
-  ```ts
-  app.post('/example', {
-    body: z.object({
-      key: z.string()
-    })
-  }, (c) => {
-    const validatedObject = c.req.body
-  })
-  ```
-
-  Text:
-
-  ```ts
-  app.post('/example', {
-    body: z.string().min(4).max(16)
-  }, (c) => {
-    const validatedString = c.req.body
-  })
-  ```
-
-### Parsing & Validating Query Parameters
-
-  ```ts
-  app.get('/example', {
-    query: z.object({
-      key: z.string()
-    }).strict()
-  }, (c) => {
-    const validatedObject = c.req.query
-  })
-  ```
-
-### Parsing & Validating Headers
-
-  ```ts
-  app.get('/example', {
-    query: z.object({
-      key: z.string()
-    })
-  }, (c) => {
-    const validatedObject = c.req.query
-  })
-  ```
-
-### Parsing & Validating Cookies
-
-  ```ts
-  app.get('/example', {
-    cookies: z.object({
-      key: z.string()
-    }).strict()
-  }, (c) => {
-    const validatedObject = c.req.cookies
-  })
-  ```
+}, (c) => {
+  console.log(c.req.cookies)
+})
+```

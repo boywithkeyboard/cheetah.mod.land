@@ -3,131 +3,80 @@ title: Response
 order: 2
 ---
 
-## Set Response Body
+## Set response body
 
-- ### Text
+You can either set the body of the response explicitly...
 
-  ```ts
-  // #1 - Explicit
-  app.get('/example', (c) => {
-    c.res.text('text')
-  })
+```ts
+c.res.body = { foo: 'bar' }
+```
 
-  // #2 - Implicit
-  app.get('/example', (c) => {
-    return 'text'
-  })
-  ```
+...or just return it:
 
-- ### JSON
+```ts
+app.get('/', () => {
+  return { foo: 'bar' }
+})
+```
 
-  ```ts
-  // #1 - Explicit
-  app.get('/example', (c) => {
-    c.res.json({ key: 'value' })
-  })
-
-  // #2 - Implicit
-  app.get('/example', (c) => {
-    return { key: 'value' }
-  })
-  ```
-
-- ### ArrayBuffer/Uint8Array
-
-  ```ts
-  app.get('/example', (c) => {
-    c.res.buffer(buffer)
-  })
-  ```
-
-- ### Blob
-
-  ```ts
-  app.get('/example', (c) => {
-    c.res.blob(blob)
-  })
-  ```
-
-- ### FormData
-
-  ```ts
-  app.get('/example', (c) => {
-    c.res.formData(formData)
-  })
-  ```
-
-- ### ReadableStream
-
-  ```ts
-  app.get('/example', (c) => {
-    c.res.stream(readableStream)
-  })
-  ```
-
-## Set Response Code
+## Set response code
 
 **By default, the status code is `200`** - if an error occurs, it will be `500`
 (unknown error) or `400` (validation error).
 
-- #### Directly
-
-  ```ts
-  c.res.code(statusCode)
-  ```
-
-- #### Indirectly
-
-  - You can either specify the status code for the response as second argument
-    when setting the response body:
-
-    ```ts
-    app.get('/example', (c) => {
-      c.res.buffer(buffer, statusCode)
-    })
-    ```
-
-  - ...or in the JSON object (if your response body should be a JSON object):
-
-    cheetah won't remove the `code` field from your JSON object! {.tip}
-
-    ```ts
-    app.get('/example', (c) => {
-      return {
-        code: 200,
-        // ...
-      }
-    })
-    ```
-
-## Attach a Header
+### Explicitly
 
 ```ts
-c.res.header(name, value)
+c.res.code = 100
 ```
 
-## Attach a Cookie
+### Implicitly
+
+If your response body is a JSON object, you can also add a `code` key to it to set the status code of the response.
+
+cheetah won't remove the `code` field from your JSON object! {.tip}
 
 ```ts
-c.res.cookie(name, value, options)
+app.get('/', () => {
+  return {
+    foo: 'bar',
+    code: 100
+  }
+})
 ```
 
-- _name_ `string`
-- _value_ `string`
-- _options_ `object`
-  - _expiresAt_ `Date`
-  - _maxAge_ `number`
-  - _domain_ `string`
-  - _path_ `string`
-  - _secure_ `boolean`
-  - _httpOnly_ `boolean`
-  - _sameSite_ `string`
+## Attach a header
+
+```ts
+c.res.header('name', 'value')
+```
+
+## Attach a cookie
+
+```ts
+c.res.cookie('name', 'value', options)
+```
+
+### Options:
+
+- _expiresAt_ `Date`
+- _maxAge_ `number`
+- _domain_ `string`
+- _path_ `string`
+- _secure_ `boolean`
+- _httpOnly_ `boolean`
+- _sameSite_ `string`
 
 ## Make a Redirect
 
+The status code is by default set to `307` (temporary redirect).
+
 ```ts
-c.res.redirect(destination, statusCode)
+c.res.redirect(destination, code)
 ```
 
-- _destination_ `string`
-- _statusCode_ `string` _(307 - temporary redirect - by default)_
+## Calculate size of body
+
+```ts
+c.res.bodySize
+```
