@@ -15,7 +15,7 @@ If you don't specify a code, it will fall back to `400`.
 new Exception(message, code)
 ```
 
-There are a few [built-in error messages/codes](https://github.com/azurystudio/cheetah/blob/dev/deno/Exception.ts#L1).
+There are a few [built-in error messages/codes](https://github.com/azurystudio/cheetah/blob/dev/exception.ts).
 
 ```ts
 new Exception('Not Found') // -> message: Not Found, code: 404
