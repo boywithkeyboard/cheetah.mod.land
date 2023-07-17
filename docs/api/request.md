@@ -3,7 +3,7 @@ title: Request
 order: 1
 ---
 
-Please also read the [Parsing & Validation](https://github.com/azurystudio/cheetah/blob/dev/guide/parsing_and_validation.md) guide for a full overview. {.tip}
+Please also read the [Parsing & Validation](/docs/api/validation/) guide for a full overview. {.tip}
 
 ## Get IP address
 
