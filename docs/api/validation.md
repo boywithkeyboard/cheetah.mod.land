@@ -10,17 +10,16 @@ the request body has the MIME type `multipart/form-data`)_.
 
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
-import z from 'https://deno.land/x/zod/mod.ts'
+import { z } from 'https://deno.land/x/zod/mod.ts'
 
 const app = new cheetah()
 
 app.get('/', {
   body: z.object({
     foo: z.string()
-  }),
-  transform: true
+  })
 }, async (c) => {
-  console.log(await c.req.body()) // e.g. { foo: 'bar' }
+  console.log(await c.req.body({ transform: true })) // e.g. { foo: 'bar' }
 })
 ```
 

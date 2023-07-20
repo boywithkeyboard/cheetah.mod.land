@@ -41,7 +41,7 @@ This listener gets executed **before any routing** to allow for full flexibility
 **The data consists of:**
 
 - `_` - The settings object you've specified. If all fields in your settings object are optional, it might be undefined.
-- `app` - The app context including information such as a set of all routes, the IP address of the incoming request, the runtime, environment variables (if runtime is Cloudflare) and the proxy.
+- `app` - The app context including information such as a set of all routes, the IP address of the incoming request, the runtime, environment variables (if runtime is Cloudflare), the querystring & pathname and the proxy.
 - `req` - The [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) object.
 
 ### `onResponse`
@@ -51,7 +51,7 @@ This listener gets executed **just before a response is constructed**.
 **The data consists of:**
 
 - `_` - The settings object you've specified. If all fields in your settings object are optional, it might be undefined.
-- `app` - The app context including information such as a set of all routes, the IP address of the incoming request, the runtime, environment variables (if runtime is Cloudflare) and the proxy.
+- `app` - The app context including information such as a set of all routes, the IP address of the incoming request, the runtime, environment variables (if runtime is Cloudflare), the querystring & pathname and the proxy.
 - `c` - The context (including request, response and other already known features).
 
 

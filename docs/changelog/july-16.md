@@ -1,6 +1,6 @@
 ---
 title: v1.0
-order: 1
+order: 2
 ---
 
 ## `cache` option is no longer available ⚠️

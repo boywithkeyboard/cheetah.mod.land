@@ -45,6 +45,8 @@ These methods all have a default time limit of _3s_ for added security. If
 the function cannot complete within _3s_ or fails to parse the body, it
 will return `null`.
 
+Don't use these methods if you have specified a validation schema for your body! {.tip}
+
 - `ArrayBuffer`
 
   ```ts
@@ -69,5 +71,14 @@ will return `null`.
   const data = c.req.stream()
   ```
 
-You can always use one of these methods, even if you've already read the body
-before - they won't throw an error! {.tip}
+- `String`
+
+  ```ts
+  const data = await c.req.text()
+  ```
+
+- `JSON`
+
+  ```ts
+  const data = await c.req.json()
+  ```
