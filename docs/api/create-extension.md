@@ -34,6 +34,10 @@ export const ext = createExtension({
 
 ## Events
 
+### `onPlugIn`
+
+This listener gets only executed on the first incoming request (in order to include environment variables on Cloudflare Workers).
+
 ### `onRequest`
 
 This listener gets executed **before any routing** to allow for full flexibility.
@@ -53,5 +57,3 @@ This listener gets executed **just before a response is constructed**.
 - `_` - The settings object you've specified. If all fields in your settings object are optional, it might be undefined.
 - `app` - The app context including information such as a set of all routes, the IP address of the incoming request, the runtime, environment variables (if runtime is Cloudflare), the querystring & pathname and the proxy.
 - `c` - The context (including request, response and other already known features).
-
-

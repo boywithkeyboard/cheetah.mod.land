@@ -1,127 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cheetah.mod.land/</loc>
+    <loc>http://localhost:3000/</loc>
     <lastmod>2023-06-08T13:00:33.241Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/cache/</loc>
+    <loc>http://localhost:3000/docs/accessories/cache/</loc>
     <lastmod>2023-07-16T02:31:08.016Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/env/</loc>
+    <loc>http://localhost:3000/docs/accessories/env/</loc>
     <lastmod>2023-07-16T02:31:08.016Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/jsx/</loc>
+    <loc>http://localhost:3000/docs/accessories/jsx/</loc>
     <lastmod>2023-07-16T02:31:08.017Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/jwt/</loc>
+    <loc>http://localhost:3000/docs/accessories/jwt/</loc>
     <lastmod>2023-06-21T20:44:03.886Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/location-data/</loc>
+    <loc>http://localhost:3000/docs/accessories/location-data/</loc>
     <lastmod>2023-07-16T02:31:08.018Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/otp/</loc>
+    <loc>http://localhost:3000/docs/accessories/otp/</loc>
     <lastmod>2023-06-14T21:21:59.360Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/accessories/send-email/</loc>
+    <loc>http://localhost:3000/docs/accessories/send-email/</loc>
     <lastmod>2023-06-14T21:22:35.285Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/create-extension/</loc>
+    <loc>http://localhost:3000/docs/api/create-extension/</loc>
     <lastmod>2023-07-16T02:31:08.020Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/exception/</loc>
+    <loc>http://localhost:3000/docs/api/exception/</loc>
     <lastmod>2023-06-14T11:56:10.938Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/multiple-handlers/</loc>
+    <loc>http://localhost:3000/docs/api/multiple-handlers/</loc>
     <lastmod>2023-07-16T02:31:08.021Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/request/</loc>
+    <loc>http://localhost:3000/docs/api/request/</loc>
     <lastmod>2023-06-14T11:51:05.818Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/response/</loc>
+    <loc>http://localhost:3000/docs/api/response/</loc>
     <lastmod>2023-06-14T11:53:10.598Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/routing/</loc>
+    <loc>http://localhost:3000/docs/api/routing/</loc>
     <lastmod>2023-06-14T11:58:02.283Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/use-extension/</loc>
+    <loc>http://localhost:3000/docs/api/use-extension/</loc>
     <lastmod>2023-07-16T02:31:08.023Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/api/validation/</loc>
+    <loc>http://localhost:3000/docs/api/validation/</loc>
     <lastmod>2023-06-20T23:34:48.741Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/changelog/july-16/</loc>
+    <loc>http://localhost:3000/docs/changelog/august-6/</loc>
+    <lastmod>2023-08-06T20:23:56.862Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/docs/changelog/july-16/</loc>
     <lastmod>2023-07-16T02:31:08.026Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/changelog/july-20/</loc>
+    <loc>http://localhost:3000/docs/changelog/july-20/</loc>
     <lastmod>2023-07-20T20:34:34.687Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/configuration/base/</loc>
+    <loc>http://localhost:3000/docs/configuration/base/</loc>
     <lastmod>2023-06-14T11:17:40.303Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/configuration/cors/</loc>
+    <loc>http://localhost:3000/docs/configuration/cors/</loc>
     <lastmod>2023-06-14T11:17:36.995Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/configuration/custom-error-pages/</loc>
+    <loc>http://localhost:3000/docs/configuration/custom-error-pages/</loc>
     <lastmod>2023-06-14T11:18:05.710Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/configuration/preflight-mode/</loc>
+    <loc>http://localhost:3000/docs/configuration/preflight-mode/</loc>
     <lastmod>2023-06-14T11:42:36.794Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/configuration/proxy/</loc>
+    <loc>http://localhost:3000/docs/configuration/proxy/</loc>
     <lastmod>2023-07-16T02:31:08.028Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/extensions/compress/</loc>
+    <loc>http://localhost:3000/docs/extensions/compress/</loc>
     <lastmod>2023-07-16T02:31:08.030Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/extensions/debug/</loc>
+    <loc>http://localhost:3000/docs/extensions/debug/</loc>
     <lastmod>2023-07-16T02:31:08.030Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/extensions/favicon/</loc>
+    <loc>http://localhost:3000/docs/extensions/favicon/</loc>
     <lastmod>2023-07-20T20:22:47.617Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/extensions/helmet/</loc>
+    <loc>http://localhost:3000/docs/extensions/files/</loc>
+    <lastmod>2023-08-06T20:39:47.705Z</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/docs/extensions/helmet/</loc>
     <lastmod>2023-07-16T02:31:08.031Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/extensions/pretty/</loc>
+    <loc>http://localhost:3000/docs/extensions/pretty/</loc>
     <lastmod>2023-07-20T20:22:46.027Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/setup/cloudflare-workers/</loc>
+    <loc>http://localhost:3000/docs/setup/cloudflare-workers/</loc>
     <lastmod>2023-06-14T21:17:46.034Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/setup/deno/</loc>
+    <loc>http://localhost:3000/docs/setup/deno/</loc>
     <lastmod>2023-06-14T21:17:33.761Z</lastmod>
   </url>
   <url>
-    <loc>https://cheetah.mod.land/docs/setup/getting-started/</loc>
+    <loc>http://localhost:3000/docs/setup/getting-started/</loc>
     <lastmod>2023-06-14T19:54:44.460Z</lastmod>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 <nav class="navbar-container">
   <div class="navbar">
     <a href="/" class="navbar-logo" aria-label="Return home">
-      <span>cheetah <small>× v1.1.0</small></span>
+      <span>cheetah <small>× {% include "../../version.njk" %}</small></span>
     </a>
 
     <ul class="navbar-menu">
@@ -13,6 +13,11 @@
       <li>
         <a href="/docs/setup/getting-started/" {% if main_menu == "docs" %}class="is-selected"{% endif %}>
           Documentation
+        </a>
+      </li>
+      <li>
+        <a href="https://discord.gg/2rCya9EWGv" target=”_blank”>
+          Discord
         </a>
       </li>
       <li>
