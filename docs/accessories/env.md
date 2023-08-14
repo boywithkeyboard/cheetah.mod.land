@@ -19,3 +19,18 @@ app.get('/', (c) => {
   console.log(foo) // e.g. 'bar'
 })
 ```
+
+You can also retrieve just a single environment variable with the `getVariable` method:
+
+```ts
+import app from 'https://deno.land/x/cheetah/mod.ts'
+import { getVariable } from 'https://deno.land/x/cheetah/x/env.ts'
+
+const app = new cheetah()
+
+app.get('/', (c) => {
+  const foo = getVariable<string>(c, 'foo')
+
+  console.log(foo) // e.g. 'bar'
+})
+```

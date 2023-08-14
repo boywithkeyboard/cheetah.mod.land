@@ -1,6 +1,6 @@
 ---
 title: v1.2
-order: 1
+order: 3
 ---
 
 ## New `files` extension
