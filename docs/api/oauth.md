@@ -5,7 +5,7 @@ order: 9
 
 ## Sneak Peek
 
-Please don't forget set the `jwt_secret` (or `JWT_SECRET`) environment variable if you want to use the oauth module. {.tip}
+Please don't forget to set the `jwt_secret` (or `JWT_SECRET`) environment variable if you want to use the oauth module. {.tip}
 
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
