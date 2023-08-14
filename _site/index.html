@@ -13,7 +13,7 @@ app.<span class="hljs-title function_">post</span>(<span class=hljs-string>'/'</
 
 <span class=hljs-keyword>const</span> app = <span class=hljs-keyword>new</span> <span class="hljs-title function_">cheetah</span>()
 
-app.<span class="hljs-title function_">post</span>(<span class=hljs-string>'/'</span>, <span class=hljs-function>(<span class=hljs-params>c</span>) =></span> {
+app.<span class="hljs-title function_">post</span>(<span class=hljs-string>'/'</span>, <span class=hljs-keyword>async</span> (c) => {
   <span class=hljs-keyword>const</span> body = <span class=hljs-keyword>await</span> c.<span class=hljs-property>req</span>.<span class="hljs-title function_">buffer</span>()
 })
 </code></pre></div><div class=landing-usage-text><h2>🪹 Chaining & Nesting</h2><p>cheetah doesn't dictate you how to write your app.</div><div class=landing-usage-code><lume-code><ul aria-label="Code Tabs"class=lume-code-menu role=tablist><li role=presentation><button class="lume-code-tab is-active"aria-controls=panel-1-1 aria-selected=true id=tab-1-1 role=tab tabindex=0>🔗 Chaining</button><li role=presentation><button aria-controls=panel-1-2 aria-selected=false class=lume-code-tab id=tab-1-2 role=tab tabindex=-1>🪹 Nesting</button></ul> <pre aria-labelledby=tab-1-1 id=panel-1-1 role=tabpanel tabindex=0><code class="language-ts hljs language-typescript"title="🔗 Chaining"><span class=hljs-keyword>import</span> cheetah <span class=hljs-keyword>from</span> <span class=hljs-string>'https://deno.land/x/cheetah/mod.ts'</span>

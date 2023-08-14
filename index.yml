@@ -37,7 +37,7 @@ usage:
 
       const app = new cheetah()
 
-      app.post('/', (c) => {
+      app.post('/', async (c) => {
         const body = await c.req.buffer()
       })
       ```
