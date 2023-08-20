@@ -11,7 +11,7 @@ Please use `c.res.setCookie()` instead of `c.res.cookie()`.
 
 As the original `Exception` class was already used internally in cheetah's core, it only made sense to move a enhanced variant of this method to the context object.
 
-## New `c.dev` method
+## New `c.dev` variable
 
 If you run your app through the new `cheetah serve` command or enable the `debug` option for your app, this variable will be automatically set to `true`.
 
