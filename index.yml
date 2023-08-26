@@ -1,8 +1,8 @@
 layout: layouts/landing.njk
-title: cheetah, the ultimative web framework
-description: The blazingly fast web framework for Cloudflare Workers and Deno.
+title: cheetah, your favorite web framework
+description: The most straightforward web framework for Cloudflare Workers and Deno.
 header:
-  title: The <span>blazingly fast</span> framework for the web.
+  title: The <span>most straightforward</span> framework for the web.
 
 install:
   title: "Run the following to [setup cheetah](/docs/setup/getting-started/):"
@@ -10,9 +10,9 @@ install:
   url: /docs/setup/getting-started/
 
 usage:
-  - title: 🧙‍♂️ Schema Validation
+  - title: Schema Validation 🧙‍♂️
     description: |
-      When building a large API with cheetah, you probably want some sort of validation to reduce the amount of boilerplate code to validate the body, query, cookies, and header of the incoming request.
+      When building a large API with cheetah, you probably want some sort of validation to reduce the amount of boilerplate code to <b>validate the body, query, cookies, and header of the incoming request</b>.
     code: |
       ```ts
       import cheetah from 'https://deno.land/x/cheetah/mod.ts'
@@ -28,9 +28,9 @@ usage:
       }, () => 'Hello!')
       ```
 
-  - title: 🪖 Secure
+  - title: Secure 🪖
     description: |
-      cheetah ensures that parsing doesn't cause your app to freeze.
+      cheetah ensures that <b>neither</b> parsing freezes your application nor a malformed request <b>causes a crash</b>.
     code: |
       ```ts
       import cheetah from 'https://deno.land/x/cheetah/mod.ts'
@@ -42,9 +42,9 @@ usage:
       })
       ```
   
-  - title: 🪹 Chaining & Nesting
+  - title: Chaining & Nesting 🪹
     description: |
-      cheetah doesn't dictate you how to write your app.
+      cheetah doesn't dictate you how to write your app. <b>Chain it, nest it, have fun with it!</b>
     code: |
       <lume-code>
 
