@@ -43,11 +43,12 @@
   grid-area: fire;
   align-self: center;
   justify-self: center;
-  height: 256px;
-  width: 256px;
+  height: 512px;
+  width: 512px;
   border-radius: 50%;
-  background-image: url("/fat-cat-laser-eyes.gif");
+  background-image: url("/smiling.gif");
   background-position: center;
+  background-size: cover;
 
   @media (min-width: 1000px) {
     display: block;
@@ -113,12 +114,17 @@
 
 /** Usage */
 .landing-usage-text {
-  font: var(--text-caption);
-  color: var(--color-foreground-1);
-  max-width: 30em;
+  font: 20px/1.6 var(--font-ui);
+  color: var(--gray10);
+  max-width: 40em;
+
+  & b {
+    font-weight: 500;
+    color: var(--color-foreground-1);
+  }
 
   & h2 {
-    font: var(--text-title);
+    font: 700 clamp(20px, 6vw, 48px)/1.2 var(--font-display);
     color: var(--color-foreground);
     letter-spacing: var(--text-title-spacing);
     margin: 0;
@@ -133,7 +139,7 @@
 @media (min-width: 800px) {
   .landing-usage {
     display: grid;
-    grid-template-columns: 275px minmax(0, 800px);
+    grid-template-columns: 500px minmax(0, 800px);
     justify-content: space-between;
     row-gap: var(--row-gap-2);
     column-gap: var(--column-gap-2);
@@ -165,6 +171,7 @@
     margin: 0;
     color: var(--color-foreground);
   }
+  
   & svg {
     display: block;
     margin: 0 0 1em;
@@ -185,6 +192,7 @@
     margin: 0;
   }
 }
+
 .landing-examples-header {
   display: flex;
   justify-content: space-between;

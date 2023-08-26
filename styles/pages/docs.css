@@ -19,6 +19,9 @@
   position: sticky;
   top: 100px;
   align-self: start;
+  background: var(--color-background-1);
+  padding: 10px;
+  border-radius: 15px;
 
   @media (min-width: 900px) {
     overflow-y: auto;
@@ -26,8 +29,6 @@
   }
 }
 .doc-navbar-section {
-  border-top: 1px solid var(--color-background-2);
-
   &:nth-child(1) {
     border-top: none;
   }
@@ -56,7 +57,7 @@
   align-items: center;
   column-gap: 5px;
   padding: 10px 0;
-  font: var(--text-caption-bold);
+  font: 500 18px/1.6 var(--font-ui);
   transition: background-color var(--animation-duration);
   color: var(--color-foreground-1);
   user-select: none;
@@ -80,28 +81,28 @@
   list-style: none;
   padding: 0;
   margin: 0 0 10px;
-  font: var(--text-caption);
+  font: 17px/1.4 var(--font-ui);
 
   & li + li {
-    margin-top: 1px;
+    margin-top: 2px;
   }
 
   & a {
     display: block;
-    padding: .5em .5em .5em 35px;
+    padding: .4em .5em .4em .75em;
     color: var(--color-foreground-1);
     text-decoration: none;
-    border-radius: 32px;
+    border-radius: 5px;
     transition: background-color var(--animation-duration);
 
     &:hover {
-      background-color: var(--color-background-1);
+      background-color: var(--color-background-2);
       color: var(--color-foreground);
     }
     &[aria-current="page"] {
-      background-color: var(--color-background-2);
+      background-color: var(--color-background-3);
       color: var(--color-foreground);
-      font: var(--text-caption-bold);
+      font: 17px/1.4 var(--font-ui);
     }
     & .tag {
       float: right;
@@ -116,6 +117,7 @@
   grid-area: content;
 }
 .doc-header {
+  
   border-bottom: solid 1px var(--color-background-2);
   padding-bottom: var(--row-gap-0);
   margin-bottom: var(--row-gap-1);

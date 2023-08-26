@@ -1,11 +1,12 @@
 .navbar-container {
-  /* background-color: var(--color-background-a); */
+  background-color: var(--color-background);
   position: sticky;
   top: 0;
   padding: 0 var(--margin);
   z-index: 10;
-  border-bottom: solid 1px var(--color-background-2);
   backdrop-filter: blur(8px);
+  border-bottom: solid 1px var(--color-background-2);
+  /* background: var(--color-background-1); */
 }
 .navbar {
   max-width: var(--max-width);
@@ -28,7 +29,7 @@
   } */
 
   & span {
-    font: var(--text-body-bold);
+    font: 600 25px/1.6 var(--font-ui);
     display: flex;
     align-self: center;
     align-items: center;
@@ -50,7 +51,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  font: var(--text-caption-bold);
+  font: 18px/1.6 var(--font-ui);
   letter-spacing: var(--text-caption-spacing);
   overflow-x: auto;
   flex: 1 1 auto;
@@ -58,20 +59,25 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   will-change: scroll-position;
+  gap: 5px;
 
   & li {
     display: flex;
+    align-items: center;
 
     &:first-child {
       margin-left: auto;
     }
 
     &:nth-last-child(1) {
+      margin-left: 60px;
+
       > a {
         color: var(--color-primary);
+        background: var(--color-background-2);
 
         &:hover {
-          background-image: linear-gradient(var(--color-primary), var(--color-primary));
+          background: var(--color-background-3);
         }
       }
     }
@@ -103,22 +109,22 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 0 1em;
+    padding: .25em 1em;
     white-space: nowrap;
+    border-radius: 64px;
+    transition: .2s;
 
     &:hover {
-      background-image: linear-gradient(var(--color-foreground), var(--color-foreground));
-      background-repeat: no-repeat;
-      background-size: calc(100% - 2em) 1px;
-      background-position: center bottom;
+      color: var(--color-foreground-1);
+      background: var(--color-background-2);
     }
 
     &.is-selected {
-      color: var(--color-foreground-1);
-      background-image: linear-gradient(var(--color-foreground-1), var(--color-foreground-1));
+      background: var(--color-background-3);
+      /* background-image: linear-gradient(var(--color-foreground-1), var(--color-foreground-1));
       background-repeat: no-repeat;
       background-size: calc(100% - 2em) 1px;
-      background-position: center bottom;
+      background-position: center bottom; */
     }
   }
 }
