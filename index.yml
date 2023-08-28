@@ -5,9 +5,9 @@ header:
   title: The <span>most straightforward</span> framework for the web.
 
 install:
-  title: "Run the following to [setup cheetah](/docs/setup/getting-started/):"
+  title: "Run the following to [setup cheetah](/docs/getting-started/introduction/):"
   code: deno run -Ar https://deno.land/x/cheetah/setup.ts
-  url: /docs/setup/getting-started/
+  url: /docs/getting-started/introduction/
 
 usage:
   - title: Schema validation 🧙‍♂️

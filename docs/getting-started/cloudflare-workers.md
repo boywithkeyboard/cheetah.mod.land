@@ -1,6 +1,6 @@
 ---
-title: Cloudflare Workers
-order: 3
+title: Build for Cloudflare Workers
+order: 4
 ---
 
 Create a entry file for your API, preferably `mod.ts` with the following content:

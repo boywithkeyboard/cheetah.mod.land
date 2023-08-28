@@ -1,6 +1,6 @@
 ---
-title: Deno
-order: 2
+title: Build for Deno
+order: 3
 ---
 
 Create a entry file for your API, preferably `mod.ts` with the following content:
