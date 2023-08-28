@@ -6,7 +6,7 @@ To run the web server locally, simply type
 deno task serve
 ```
 
-The documentation can be found in the [/docs]() directory.
+The documentation can be found in the [/docs](https://github.com/boywithkeyboard/cheetah.mod.land/tree/main/docs) directory.
 
 ### Contributing
 
