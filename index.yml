@@ -10,7 +10,7 @@ install:
   url: /docs/setup/getting-started/
 
 usage:
-  - title: Schema Validation 🧙‍♂️
+  - title: Schema validation 🧙‍♂️
     description: |
       When building a large API with cheetah, you probably want some sort of validation to reduce the amount of boilerplate code to <b>validate the body, query, cookies, and header of the incoming request</b>.
     code: |
@@ -42,7 +42,7 @@ usage:
       })
       ```
   
-  - title: Chaining & Nesting 🪹
+  - title: Chaining & nesting 🪹
     description: |
       cheetah doesn't dictate you how to write your app. <b>Chain it, nest it, have fun with it!</b>
     code: |
@@ -65,6 +65,48 @@ usage:
       const app = new cheetah()
         .use('/fast-food', fastFood)
         .patch('/pancakes', () => '🥞') // PATCH '/pancakes'
+      ```
+
+      </lume-code>
+
+  - title: Pure perfection 💎
+    description: |
+      cheetah ranks <a href='/docs/benchmark'>among the fastest web frameworks</a> for JavaScript and has a <b>much shorter syntax</b> compared to its competitors.
+    code: |
+      <lume-code>
+
+      ```ts { title="🥇 cheetah" }
+      import cheetah from 'https://deno.land/x/cheetah@v1.5.0/mod.ts'
+
+      new cheetah()
+        .get('/', () => 'Hey!')
+        .serve()
+      ```
+      ```ts { title="🥈 Hono" }
+      import { Hono } from 'https://deno.land/x/hono@v3.5.5/mod.ts'
+
+      const app = new Hono()
+        .get('/', c => c.text('Hey!'))
+
+      Deno.serve(req => {
+        return app.fetch(req)
+      })
+      ```
+      ```ts { title="🥉 Oak" }
+      import { Application, Router } from 'https://deno.land/x/oak@v12.6.0/mod.ts'
+
+      const app = new Application()
+
+      const router = new Router()
+        .get('/', c => {
+          c.response.headers.set('content-type', 'text/plain; charset=utf-8')
+          c.response.body = 'Hey!'
+        })
+
+      app
+        .use(router.routes())
+        .use(router.allowedMethods())
+        .listen({ port: 8000 })
       ```
 
       </lume-code>
