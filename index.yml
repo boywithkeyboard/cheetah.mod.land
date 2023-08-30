@@ -71,7 +71,7 @@ usage:
 
   - title: Pure perfection 💎
     description: |
-      cheetah ranks <a href='/docs/benchmark'>among the fastest web frameworks</a> for JavaScript and has a <b>much shorter syntax</b> compared to its competitors.
+      cheetah ranks <a href='/docs/getting-started/performance/'>among the fastest web frameworks</a> for JavaScript and has a <b>much shorter syntax</b> compared to its competitors.
     code: |
       <lume-code>
 
