@@ -6,8 +6,13 @@
 
     <ul class="navbar-menu">
       <li>
-        <a href="/" {% if main_menu != "docs" %}class="is-selected"{% endif %}>
+        <a href="/" {% if main_menu != "docs" and main_menu != "changelog" %}class="is-selected"{% endif %}>
           Home
+        </a>
+      </li>
+      <li>
+        <a href="/changelog/current/latest" {% if main_menu == "changelog" %}class="is-selected"{% endif %}>
+          Changelog
         </a>
       </li>
       <li>

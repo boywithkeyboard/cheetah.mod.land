@@ -1,6 +1,6 @@
 ---
 title: files
-description: An extension to serve static files from Cloudflare R2 or the local file system.
+description: An extension to serve static files from Cloudflare R2, an S3 bucket, or the local file system.
 order: 6
 ---
 
@@ -12,7 +12,9 @@ const app = new cheetah()
   // this serves the files in the 'static' directory,
   //   e.g. /prefix/image.png resolves to ./static/image.png
   .use('/prefix', files({
-    directory: './static'
+    serve: {
+      directory: './static'
+    }
   }))
 
   .serve()

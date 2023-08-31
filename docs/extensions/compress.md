@@ -4,6 +4,8 @@ description: An extension to compress the body of the response with [Brotli](htt
 order: 2
 ---
 
+Please don't use this extension when you're deploying your app to Deno Deploy or Cloudflare Workers as they handle this for you in a much more optimized way. {.tip}
+
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
 import { compress } from 'https://deno.land/x/cheetah/ext/compress.ts'

@@ -3,13 +3,15 @@ main_menu: docs
 docs_menu:
   - title: Getting Started
     id: getting-started
-  - title: What's New
-    id: changelog
   - title: Configuration
     id: configuration
-  - title: API
-    id: api
+  - title: Context
+    id: context
+  - title: CLI
+    id: cli
   - title: Extensions
     id: extensions
-  - title: Accessories
-    id: accessories
+  - title: Utilities
+    id: utilities
+  - title: Advanced
+    id: advanced

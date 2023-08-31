@@ -1,6 +1,6 @@
 ---
 title: Routing
-order: 4
+order: 6
 ---
 
 ## Chaining

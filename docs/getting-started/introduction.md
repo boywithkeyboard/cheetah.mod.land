@@ -26,8 +26,8 @@ Throughout this entire guide we specify imports without a version tag due to sim
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
 ```
 
-**Please do not import the modules this way!** Instead, add the latest version (e.g. `v1.0.0` as of July 16th) after `x/cheetah` like this:
+**Please do not import the modules this way!** Instead, add the latest version (e.g. `v1.5.0` as of August 28th) after `x/cheetah` like this:
 
 ```ts
-import cheetah from 'https://deno.land/x/cheetah@v1.0.0/mod.ts'
+import cheetah from 'https://deno.land/x/cheetah@v1.5.0/mod.ts'
 ```
