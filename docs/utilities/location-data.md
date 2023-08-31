@@ -9,14 +9,14 @@ You must either deploy your app to [Cloudflare Workers](https://developers.cloud
 ## Setup
 
 ```ts
-import { LocationData } from 'https://deno.land/x/cheetah/x/location_data.ts'
+import { LocationData } from 'https://deno.land/x/cheetah/mod.ts'
 
 app.get('/', (c) => {
   const location = new LocationData(c)
 })
 ```
 
-## Get the city
+## Get the City
 
 The city the request originated from.
 
@@ -26,7 +26,7 @@ e.g. `Austin`
 location.city
 ```
 
-## Get the region
+## Get the Region
 
 If known, the ISO 3166-2 name for the first level region associated with the IP address of the incoming request.
 
@@ -36,7 +36,7 @@ e.g. `Texas`
 location.region
 ```
 
-## Get the country
+## Get the Country
 
 The [ISO 3166-1 Alpha 2](https://www.iso.org/iso-3166-country-codes.html) country code the request originated from.
 
@@ -50,7 +50,7 @@ e.g. `GB`
 location.country
 ```
 
-## Get the continent
+## Get the Continent
 
 A two-letter code indicating the continent the request originated from.
 
@@ -60,7 +60,7 @@ e.g. `NA`
 location.continent
 ```
 
-## Get the region code
+## Get the Region Code
 
 If known, the ISO 3166-2 code for the first-level region associated with the IP address of the incoming request.
 
@@ -70,7 +70,7 @@ e.g. `TX`
 location.regionCode
 ```
 
-## Get the latitude
+## Get the Latitude
 
 Latitude of the incoming request.
 
@@ -80,7 +80,7 @@ e.g. `30.27130`
 location.latitude
 ```
 
-## Get the longitude
+## Get the Longitude
 
 Longitude of the incoming request.
 
@@ -90,7 +90,7 @@ e.g. `-97.74260`
 location.longitude
 ```
 
-## Get the postal code
+## Get the Postal Code
 
 Postal code of the incoming request.
 
@@ -100,7 +100,7 @@ e.g. `78701`
 location.postalCode
 ```
 
-## Get the timezone
+## Get the Timezone
 
 Timezone of the incoming request.
 
@@ -110,7 +110,7 @@ e.g. `America/Chicago`
 location.timezone
 ```
 
-## Get the datacenter
+## Get the Datacenter
 
 The three-letter [IATA](https://en.wikipedia.org/wiki/IATA_airport_code) airport code of the data center that the request hit.
 

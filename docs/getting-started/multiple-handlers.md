@@ -1,6 +1,6 @@
 ---
 title: Multiple Handlers
-order: 2
+order: 5
 ---
 
 You can also have an infinite amount of handlers on a single route, such as:

@@ -1,0 +1,5 @@
+layout: layouts/changelog.njk
+main_menu: changelog
+docs_menu:
+  - title: v1
+    id: current

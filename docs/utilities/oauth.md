@@ -5,7 +5,7 @@ order: 9
 
 ## Sneak Peek
 
-Please don't forget to set the `jwt_secret` (or `JWT_SECRET`) environment variable if you want to use the oauth module. {.tip}
+Please don't forget to set the `JWT_SECRET` environment variable if you want to use the oauth module. {.tip}
 
 ```ts
 import cheetah from 'https://deno.land/x/cheetah/mod.ts'
@@ -61,21 +61,21 @@ const app = new cheetah({
 
 - `kv` (leverages Deno KV or Cloudflare KV, depending on the runtime)
 
-  **Environment variables:** `oauth` *(only for Cloudflare KV)*
+  **Environment variable:** `oauth` *(only for Cloudflare KV)*
 
 - `upstash` (uses [Upstash Redis](https://github.com/upstash/upstash-redis))
 
-  **Environment variables:** `upstash_url`, `upstash_token` *(can be uppercase too)*
+  **Environment variables:** `UPSTASH_URL`, `UPSTASH_TOKEN`
 
 ## Providers
 
 - `GitHub`
 
-  **Environment variables:** `github_client_id`, `github_client_secret` *(can be uppercase too)*
+  **Environment variables:** `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`
 
 - `Google`
 
-  **Environment variables:** `google_client_id`, `google_client_secret` *(can be uppercase too)*
+  **Environment variables:** `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`
 
 ## `getSessionData`
 
