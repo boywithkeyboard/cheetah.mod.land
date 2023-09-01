@@ -1,6 +1,6 @@
 ---
 title: exception
-order: 5
+order: 3
 ---
 
 The `c.exception()` method constructs a response based on the `Accept` header.
